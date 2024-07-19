@@ -6,10 +6,11 @@
 
 html,
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   height: 100%;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
+  background-color: #000;
 }
 
 main {
@@ -20,6 +21,8 @@ main {
 }
 
 .container {
+  border: 2px solid #a5a5a5;
+  border-radius: 20px;
   width: 100%;
   max-width: 400px;
   margin-inline: auto;
@@ -35,7 +38,7 @@ main {
 }
 .calculator-screen {
   font-size: 3rem;
-  padding: .5rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: end;
   height: 7rem;
@@ -43,13 +46,13 @@ main {
 
 .calculator-screen input {
   font-weight: 500;
-  border: none; 
+  border: none;
   background-color: #000;
-  text-align: right; 
-  width: 100%; 
-  box-sizing: border-box; 
-  padding: 0.5rem; 
-  color: #fff; 
+  text-align: right;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  color: #fff;
   font-size: 3.5rem;
 }
 

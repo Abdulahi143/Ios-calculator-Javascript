@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <div class="calculator-screen">
+                    <input type="text" id="display" value="0" readonly>
+                </div>
+                
+                <div class="calc-numbers">
+                    <div class="line line-1">
+                        <button id="clear" data-value="clear">AC</button>
+                        <button id="plus-minus" data-value="+/-">
+                            <img src="sign-plus-minus.svg" alt="plus-minus-svg">
+                        </button>
+                        <button id="percent" data-value="%">%</button>
+                        <button id="divide" class="operation" data-value="/">÷</button>
+                    </div>
+                    <div class="line line-2">
+                        <button id="seven" class="number" data-value="7">7</button>
+                        <button id="eight" class="number" data-value="8">8</button>
+                        <button id="nine" class="number" data-value="9">9</button>
+                        <button id="multiply" class="operation" data-value="*">×</button>
+                    </div>
+                    <div class="line line-3">
+                        <button id="four" class="number" data-value="4">4</button>
+                        <button id="five" class="number" data-value="5">5</button>
+                        <button id="six" class="number" data-value="6">6</button>
+                        <button id="subtract" class="operation" data-value="-">−</button>
+                    </div>
+                    <div class="line line-4">
+                        <button id="one" class="number" data-value="1">1</button>
+                        <button id="two" class="number" data-value="2">2</button>
+                        <button id="three" class="number" data-value="3">3</button>
+                        <button id="add" class="operation" data-value="+">+</button>
+                    </div>
+                    <div class="line line-5">
+                        <button id="zero" class="number zero" data-value="0">0</button>
+                        <button id="decimal" class="number" data-value=".">.</button>
+                        <button id="equals" data-value="=" class="operation equals">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
